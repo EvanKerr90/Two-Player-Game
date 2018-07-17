@@ -1,10 +1,9 @@
 class Player
-    attr_accessor :lives, :name, :end
+    attr_accessor :lives, :name
 
     def initialize(name)
         @lives = 3 
         @name = name
-        @end
     end
 
     def test(valid)
@@ -15,7 +14,7 @@ class Player
 
     def game_over?
         if @lives <= 0
-            @end = true
+            true
         end
     end
 
